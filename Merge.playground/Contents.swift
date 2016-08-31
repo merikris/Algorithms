@@ -1,11 +1,8 @@
 import Foundation
 
 func merge(array1 array1: [Int], array2: [Int], result: [Int] = []) -> [Int] {
-    if array1.isEmpty {
-        return result + array2
-    }
-    if array2.isEmpty {
-        return result + array1
+    if array1.isEmpty  || array2.isEmpty {
+        return result + array1 + array2
     }
     
     var array1 = array1
